@@ -73,75 +73,79 @@ function SideBar() {
 
     return (
         <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
-            <List>
-                <ListItem disablePadding>
-                    <ListItemButton component="a" href="#home">
-                        <ListItemIcon>
-                            <HomeRounded />
-                        </ListItemIcon>
-                        <ListItemText primary="HomePage" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component="a" href="#simple-style">
-                        <ListItemIcon>
-                            <ArticleRounded />
-                        </ListItemIcon>
-                        <ListItemText primary="Pages" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component="a" href="#simple-style">
-                        <ListItemIcon>
-                            <GroupRounded />
-                        </ListItemIcon>
-                        <ListItemText primary="Groups" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component="a" href="#simple-style">
-                        <ListItemIcon>
-                            <StorefrontRounded />
-                        </ListItemIcon>
-                        <ListItemText primary="Marketplace" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component="a" href="#simple-style">
-                        <ListItemIcon>
-                            <PersonRounded />
-                        </ListItemIcon>
-                        <ListItemText primary="Friends" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component="a" href="#simple-style">
-                        <ListItemIcon>
-                            <SettingsRounded />
-                        </ListItemIcon>
-                        <ListItemText primary="Settings" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component="a" href="#simple-style">
-                        <ListItemIcon>
-                            <AccountBoxRounded />
-                        </ListItemIcon>
-                        <ListItemText primary="Profile" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component="a" href="#home">
-                        <ListItemIcon>
-                            <ModeNightRounded/>
-                        </ListItemIcon>
-                        <ListItemIcon>
-                            <MaterialUISwitch sx={{ m: 1 }} defaultChecked />
-                        </ListItemIcon>
-                        
-                    </ListItemButton>
-                </ListItem>
-            </List>
+            <Box position={"fixed"}>
+                <List>
+                    <ListItem disablePadding>
+                        <ListItemButton component="a" href="#home">
+                            <ListItemIcon>
+                                <HomeRounded />
+                            </ListItemIcon>
+                            <ListItemText primary="HomePage" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component="a" href="#simple-style">
+                            <ListItemIcon>
+                                <ArticleRounded />
+                            </ListItemIcon>
+                            <ListItemText primary="Pages" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component="a" href="#simple-style">
+                            <ListItemIcon>
+                                <GroupRounded />
+                            </ListItemIcon>
+                            <ListItemText primary="Groups" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component="a" href="#simple-style">
+                            <ListItemIcon>
+                                <StorefrontRounded />
+                            </ListItemIcon>
+                            <ListItemText primary="Marketplace" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component="a" href="#simple-style">
+                            <ListItemIcon>
+                                <PersonRounded />
+                            </ListItemIcon>
+                            <ListItemText primary="Friends" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component="a" href="#simple-style">
+                            <ListItemIcon>
+                                <SettingsRounded />
+                            </ListItemIcon>
+                            <ListItemText primary="Settings" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component="a" href="#simple-style">
+                            <ListItemIcon>
+                                <AccountBoxRounded />
+                            </ListItemIcon>
+                            <ListItemText primary="Profile" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component="a" href="#home">
+                            <ListItemIcon>
+                                <ModeNightRounded />
+                            </ListItemIcon>
+                            <ListItemIcon>
+                                <MaterialUISwitch
+                                    sx={{ m: 1 }}
+                                    defaultChecked
+                                />
+                            </ListItemIcon>
+                        </ListItemButton>
+                    </ListItem>
+                </List>
+            </Box>
         </Box>
     );
 }
