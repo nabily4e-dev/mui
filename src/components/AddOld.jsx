@@ -1,8 +1,6 @@
 import {
     AddRounded,
     DateRangeRounded,
-    DeleteRounded,
-    EmojiEmotions,
     EmojiEmotionsRounded,
     ImageRounded,
     PersonAddRounded,

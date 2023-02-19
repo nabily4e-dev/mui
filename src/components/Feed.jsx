@@ -1,23 +1,6 @@
+
 import {
-    ExpandMoreRounded,
-    Favorite,
-    FavoriteBorderRounded,
-    FavoriteRounded,
-    MoreVertRounded,
-    ShareRounded,
-} from "@mui/icons-material";
-import {
-    Avatar,
-    Box,
-    Card,
-    CardActions,
-    CardContent,
-    CardHeader,
-    CardMedia,
-    Checkbox,
-    Collapse,
-    IconButton,
-    Typography,
+    Box
 } from "@mui/material";
 import React from "react";
 import Post from "./Post";
