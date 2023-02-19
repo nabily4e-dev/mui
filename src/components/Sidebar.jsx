@@ -20,7 +20,7 @@ import {
 } from "@mui/material";
 import React from "react";
 
-function SideBar() {
+function SideBar({ mode, setMode }) {
     const MaterialUISwitch = styled(Switch)(({ theme }) => ({
         width: 62,
         height: 34,
@@ -139,7 +139,15 @@ function SideBar() {
                             <ListItemIcon>
                                 <MaterialUISwitch
                                     sx={{ m: 1 }}
-                                    defaultChecked
+                                    onClick={(e) => {
+                                        setTimeout(() => {
+                                            setMode(
+                                                mode === "light"
+                                                    ? "dark"
+                                                    : "light"
+                                            );
+                                        }, 300);
+                                    }}
                                 />
                             </ListItemIcon>
                         </ListItemButton>
