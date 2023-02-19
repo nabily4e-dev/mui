@@ -15,8 +15,8 @@ import React from "react";
 
 function Rightbar() {
     return (
-        <Box flex={2} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
-            <Box position={"fixed"} width={350} height={1800}>
+        <Box flex={2} p={2} sx={{ display: { xs: "none", sm: "block" },}}>
+            <Box  position={"fixed"} width={350}>
                 <Typography variant="h6" fontWeight={100}>
                     Online Friends
                 </Typography>
@@ -59,8 +59,8 @@ function Rightbar() {
                 <Typography variant="h6" fontWeight={100} mt={2} mb={1.5}>
                     Latest Photos
                 </Typography>
-                <Box sx={{ height: 350, overflowY: "scroll", display:"none" }}>
-                    <ImageList variant="masonry" sx={{}} cols={1} gap={8}>
+                <Box sx={{ height:"120px", overflow: "scroll", }}>
+                    <ImageList variant="masonry" sx={{}} cols={2} gap={8} rowHeight={100}>
                         {itemData.map((item) => (
                             <ImageListItem key={item.img}>
                                 <img
@@ -73,10 +73,10 @@ function Rightbar() {
                         ))}
                     </ImageList>
                 </Box>
-                <Typography variant="h6" fontWeight={100} mt={2}>
+                <Typography variant="h6" fontWeight={100} mt={2} mb={2}>
                     Latest Conversation
                 </Typography>
-                <Box>
+                <Box height={250} sx={{overflow:"scroll"}}>
                     <List
                         sx={{
                             width: "100%",
@@ -138,6 +138,58 @@ function Rightbar() {
                             />
                         </ListItem>
                         <Divider variant="inset" component="li" />
+                        <ListItem alignItems="flex-start">
+                            <ListItemAvatar>
+                                <Avatar
+                                    alt="Cindy Baker"
+                                    src="/static/images/avatar/3.jpg"
+                                />
+                            </ListItemAvatar>
+                            <ListItemText
+                                primary="Oui Oui"
+                                secondary={
+                                    <React.Fragment>
+                                        <Typography
+                                            sx={{ display: "inline" }}
+                                            component="span"
+                                            variant="body2"
+                                            color="text.primary"
+                                        >
+                                            Sandra Adams
+                                        </Typography>
+                                        {
+                                            " — Do you have Paris recommendations? Have you ever…"
+                                        }
+                                    </React.Fragment>
+                                }
+                            />
+                        </ListItem><Divider variant="inset" component="li" />
+                        <ListItem alignItems="flex-start">
+                            <ListItemAvatar>
+                                <Avatar
+                                    alt="Cindy Baker"
+                                    src="/static/images/avatar/3.jpg"
+                                />
+                            </ListItemAvatar>
+                            <ListItemText
+                                primary="Oui Oui"
+                                secondary={
+                                    <React.Fragment>
+                                        <Typography
+                                            sx={{ display: "inline" }}
+                                            component="span"
+                                            variant="body2"
+                                            color="text.primary"
+                                        >
+                                            Sandra Adams
+                                        </Typography>
+                                        {
+                                            " — Do you have Paris recommendations? Have you ever…"
+                                        }
+                                    </React.Fragment>
+                                }
+                            />
+                        </ListItem><Divider variant="inset" component="li" />
                         <ListItem alignItems="flex-start">
                             <ListItemAvatar>
                                 <Avatar
