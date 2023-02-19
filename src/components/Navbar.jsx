@@ -94,7 +94,7 @@ const Navbar = () => {
                 <UserBox onClick={(e) => setAvatarMenu(true)}>
                     <Avatar
                         sx={{ width: 35, height: 35 }}
-                        src="https://cdn.pixabay.com/photo/2016/04/01/12/11/avatar-1300582_960_720.png"
+                        src="https://avatars.githubusercontent.com/u/75049983?s=96&v=4"
                     />
                     <Typography variant="span">Nabil</Typography>
                 </UserBox>
